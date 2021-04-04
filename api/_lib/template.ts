@@ -43,7 +43,7 @@ function getCss(fontSize: string) {
         border-image: url("https://www.infocrest.co.jp/ykxbdgs5qgq3/uploads/2019/10/blog_m02_2.jpg");
         border-image-slice: 1;
         border-image-repeat: stretch;
-        height: 100vh;
+        height: 90vh;
         display: flex;
         margin-bottom:4px;
         color:black;
@@ -60,16 +60,8 @@ function getCss(fontSize: string) {
     code:before, code:after {
         content: '\`';
     }
-    .logo-wrapper {
-        display: flex;
-        align-items: center;
-        align-content: center;
-        justify-content: center;
-        justify-items: center;
-    }
-    .logo {
-        margin: 0 75px;
-    }
+
+ 
     .plus {
         color: #BBB;
         font-family: Times New Roman, Verdana;
@@ -78,12 +70,7 @@ function getCss(fontSize: string) {
     .spacer {
       margin-top:10px
     }
-    .emoji {
-        height: 1em;
-        width: 1em;
-        margin: 0 .05em 0 .1em;
-        vertical-align: -0.1em;
-    }
+
     
     .heading {
         font-family: 'Noto Sans JP', 'Inter', sans-serif;
