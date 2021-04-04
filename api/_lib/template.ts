@@ -39,12 +39,13 @@ function getCss(fontSize: string) {
       }
     body {
         background: white;
-        border: solid 20px transparent;
+        border: solid 30px transparent;
         border-image: url("https://www.infocrest.co.jp/ykxbdgs5qgq3/uploads/2019/10/blog_m02_2.jpg");
         border-image-slice: 1;
         border-image-repeat: stretch;
         height: 100vh;
         display: flex;
+        margin-bottom:4px;
         color:black;
         text-align: center;
         align-items: center;
@@ -75,7 +76,7 @@ function getCss(fontSize: string) {
         font-size: 100px;
     }
     .spacer {
-        margin: 75px;
+      margin-top:10px
     }
     .emoji {
         height: 1em;
