@@ -16,19 +16,7 @@ const mono = readFileSync(`${__dirname}/../_fonts/Vera-Mono.woff2`).toString(
   "base64"
 );
 
-function getCss(theme: string, fontSize: string) {
-  let background = "white";
-  let foreground = "black";
-
-  if (theme === "dark") {
-    background = "black";
-    foreground = "white";
-  }
-
-  if (theme === "blue") {
-    background = "blue";
-    foreground = "white";
-  }
+function getCss(fontSize: string) {
   return `
     @import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP');
     @font-face {
@@ -50,7 +38,7 @@ function getCss(theme: string, fontSize: string) {
         src: url(data:font/woff2;charset=utf-8;base64,${mono})  format("woff2");
       }
     body {
-        background: "blue";
+        background: blue;
         height: 100vh;
         display: flex;
         text-align: center;
@@ -96,20 +84,20 @@ function getCss(theme: string, fontSize: string) {
         font-size: ${sanitizeHtml(fontSize)};
         font-style: normal;
         font-weight: 400;
-        color: ${foreground};
+        color: white;
         line-height: 1.5;
     }`;
 }
 
 export function getHtml(parsedReq: ParsedRequest) {
-  const { text, theme, md, fontSize } = parsedReq;
+  const { text, md, fontSize } = parsedReq;
   return `<!DOCTYPE html>
 <html>
     <meta charset="utf-8">
     <title>Generated Image</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
-        ${getCss(theme, fontSize)}
+        ${getCss(fontSize)}
     </style>
     <body>
         <div>
