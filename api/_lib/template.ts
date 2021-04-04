@@ -50,7 +50,7 @@ function getCss(theme: string, fontSize: string) {
         src: url(data:font/woff2;charset=utf-8;base64,${mono})  format("woff2");
       }
     body {
-        background: ${background};
+        background: "blue";
         height: 100vh;
         display: flex;
         text-align: center;
