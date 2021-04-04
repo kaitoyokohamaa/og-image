@@ -39,11 +39,13 @@ function getCss(fontSize: string) {
       }
     body {
         background: white;
-        border:10px solid blue;
+        border: solid 20px transparent;
+        border-image: url("https://www.infocrest.co.jp/ykxbdgs5qgq3/uploads/2019/10/blog_m02_2.jpg");
+        border-image-slice: 1;
+        border-image-repeat: stretch;
         height: 100vh;
         display: flex;
         color:black;
-        padding:10px
         text-align: center;
         align-items: center;
         justify-content: center;
