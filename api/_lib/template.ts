@@ -39,9 +39,10 @@ function getCss(fontSize: string) {
       }
     body {
         background: white;
-        border:4px solid blue;
+        border:10px solid blue;
         height: 100vh;
         display: flex;
+        color:black;
         padding:10px
         text-align: center;
         align-items: center;
@@ -86,7 +87,7 @@ function getCss(fontSize: string) {
         font-size: ${sanitizeHtml(fontSize)};
         font-style: normal;
         font-weight: 400;
-        color: white;
+        color: black;
         line-height: 1.5;
     }`;
 }
