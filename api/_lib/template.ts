@@ -38,9 +38,11 @@ function getCss(fontSize: string) {
         src: url(data:font/woff2;charset=utf-8;base64,${mono})  format("woff2");
       }
     body {
-        background: blue;
+        background: white;
+        border:4px solid blue;
         height: 100vh;
         display: flex;
+        padding:10px
         text-align: center;
         align-items: center;
         justify-content: center;
