@@ -24,6 +24,11 @@ function getCss(theme: string, fontSize: string) {
     background = "black";
     foreground = "white";
   }
+
+  if (theme === "blue") {
+    background = "blue";
+    foreground = "white";
+  }
   return `
     @import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP');
     @font-face {
