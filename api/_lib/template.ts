@@ -57,11 +57,11 @@ function getCss(fontSize: string) {
         font-size:40px;
         font-weight: 600;
         font-family: 'Noto Sans JP', 'Inter', sans-serif;
+        margin-right:auto
     }
     .flex{
         margin-top:10px;
         display:flex
-        justify-content:flex-end;
     }
     .logo{
         font-size:60px;
