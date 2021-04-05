@@ -39,16 +39,14 @@ function getCss(fontSize: string) {
       }
     body {
         background: white;
-        border: solid 30px transparent;
+        border: solid 40px transparent;
         border-image: url("https://www.infocrest.co.jp/ykxbdgs5qgq3/uploads/2019/10/blog_m02_2.jpg");
         border-image-slice: 1;
         border-image-repeat: stretch;
         height: 90vh;
         display: flex;
         color:black;
-        text-align: center;
-        align-items: center;
-        justify-content: center;
+        width:100%
     }
     .img{
         font-family: 'Noto Sans JP', 'Inter', sans-serif;
@@ -62,6 +60,7 @@ function getCss(fontSize: string) {
     .flex{
         margin-top:10px;
         display:flex
+        width:100%
     }
     .logo{
         font-size:60px;
@@ -85,9 +84,6 @@ function getCss(fontSize: string) {
         font-family: Times New Roman, Verdana;
         font-size: 100px;
     }
-    .spacer {
-      margin-top:10px
-    }
 
     
     .heading {
@@ -96,7 +92,7 @@ function getCss(fontSize: string) {
         font-style: normal;
         font-weight: 400;
         color: black;
-        margin-top:-10px;
+
     }`;
 }
 
@@ -112,14 +108,13 @@ export function getHtml(parsedReq: ParsedRequest) {
     </style>
     <body>
         <div>
-            <div class="spacer">
             <div class="heading">${emojify(
               md ? marked(text) : sanitizeHtml(text)
             )}
-                </div>
+            </div>
             <div class="flex">
-            <div class="logo">Cloud Circle</div>
-            <div class="name">海斗</div>
+                <div class="logo">Cloud Circle</div>
+                <div class="name">海斗</div>
             </div>
         </div>
     </body>
