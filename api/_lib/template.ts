@@ -55,7 +55,7 @@ function getCss() {
         font-family: 'Noto Sans JP', 'Inter', sans-serif;
     }
     .flex{
-        margin-top:550px;
+        margin-top:500px;
         display:flex
     }
     .logo{
@@ -89,7 +89,7 @@ function getCss() {
         font-style: normal;
         font-weight: bold;
         color: black;
-        margin-top:30px;
+        margin-top:10px;
         padding:10px;
     }`;
 }
