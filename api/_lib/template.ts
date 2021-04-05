@@ -46,6 +46,8 @@ function getCss(fontSize: string) {
         height: 90vh;
         display: flex;
         color:black;
+        align-items: center;
+        justify-content: center;
         width:100%
     }
     .img{
