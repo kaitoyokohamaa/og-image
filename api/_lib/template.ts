@@ -61,10 +61,10 @@ function getCss(fontSize: string) {
         margin-top:10px;
         display:flex
         justify-content:flex-end;
-        flex-flow: column;
+
     }
     .logo{
-        font-size:40px;
+        font-size:60px;
         font-weight: 600;
         color:orange;
         font-family: 'Noto Sans JP', 'Inter', sans-serif;
