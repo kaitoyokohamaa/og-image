@@ -45,7 +45,6 @@ function getCss(fontSize: string) {
         border-image-repeat: stretch;
         height: 90vh;
         display: flex;
-        margin-bottom:4px;
         color:black;
         text-align: center;
         align-items: center;
@@ -78,7 +77,6 @@ function getCss(fontSize: string) {
         font-style: normal;
         font-weight: 400;
         color: black;
-        line-height: 1.5;
     }`;
 }
 
@@ -95,10 +93,13 @@ export function getHtml(parsedReq: ParsedRequest) {
     <body>
         <div>
             <div class="spacer">
+            <div>Cloud Circle</div>
+            <div>Reactを使って開発したいやつ募集</div>
             <div class="heading">${emojify(
               md ? marked(text) : sanitizeHtml(text)
             )}
             </div>
+            <div>@2330frrfr</div>
         </div>
     </body>
 </html>`;
