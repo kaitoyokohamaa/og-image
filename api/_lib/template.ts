@@ -59,7 +59,6 @@ function getCss(fontSize: string) {
     .flex{
         margin-top:10px;
         display:flex
-        width:100%
     }
     .logo{
         font-size:60px;
