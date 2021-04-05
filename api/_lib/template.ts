@@ -53,6 +53,7 @@ function getCss() {
         font-size:60px;
         font-weight: bold;
         font-family: 'Noto Sans JP', 'Inter', sans-serif;
+        margin-right:10px
     }
     .flex{
         margin-top:450px;
@@ -64,6 +65,7 @@ function getCss() {
         color:orange;
         font-family: 'Noto Sans JP', 'Inter', sans-serif;
         margin-right: auto;
+        margin-left:10px
     }
     code {
         color: #D400FF;
@@ -90,6 +92,7 @@ function getCss() {
         font-weight: bold;
         color: black;
         padding:10px;
+        margin-left:10px
     }`;
 }
 
