@@ -56,7 +56,7 @@ function getCss() {
         font-family: 'Noto Sans JP', 'Inter', sans-serif;
     }
     .flex{
-        margin-top:50px;
+        margin-top:150px;
         display:flex
         justify-content: flex-end;
     }
