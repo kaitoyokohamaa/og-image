@@ -89,7 +89,8 @@ function getCss() {
         font-style: normal;
         font-weight: bold;
         color: black;
-
+        margin-top:30px;
+        padding:10px;
     }`;
 }
 
