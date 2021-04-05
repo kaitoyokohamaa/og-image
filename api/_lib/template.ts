@@ -16,7 +16,7 @@ const mono = readFileSync(`${__dirname}/../_fonts/Vera-Mono.woff2`).toString(
   "base64"
 );
 
-function getCss(fontSize: string) {
+function getCss() {
   return `
     @import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP');
     @font-face {
@@ -56,14 +56,16 @@ function getCss(fontSize: string) {
         font-family: 'Noto Sans JP', 'Inter', sans-serif;
     }
     .flex{
-        margin-top:10px;
+        margin-top:50px;
         display:flex
+        justify-content: flex-end;
     }
     .logo{
         font-size:60px;
         font-weight: bold;
         color:orange;
         font-family: 'Noto Sans JP', 'Inter', sans-serif;
+        margin-right: auto;
     }
     code {
         color: #D400FF;
@@ -85,23 +87,23 @@ function getCss(fontSize: string) {
     
     .heading {
         font-family: 'Noto Sans JP', 'Inter', sans-serif;
-        font-size: ${sanitizeHtml(fontSize)};
+        font-size: 125px;
         font-style: normal;
-        font-weight: 400;
+        font-weight: bold;
         color: black;
 
     }`;
 }
 
 export function getHtml(parsedReq: ParsedRequest) {
-  const { text, md, fontSize } = parsedReq;
+  const { text, md } = parsedReq;
   return `<!DOCTYPE html>
 <html>
     <meta charset="utf-8">
     <title>Generated Image</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
-        ${getCss(fontSize)}
+        ${getCss()}
     </style>
     <body>
         <div>
