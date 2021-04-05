@@ -44,7 +44,6 @@ function getCss() {
         border-image-slice: 1;
         border-image-repeat: stretch;
         height: 90vh;
-        display: flex;
         color:black;
     }
     .img{
@@ -56,7 +55,7 @@ function getCss() {
         font-family: 'Noto Sans JP', 'Inter', sans-serif;
     }
     .flex{
-        margin-top:150px;
+        margin-top:250px;
         display:flex
         justify-content: flex-end;
     }
