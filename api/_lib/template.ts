@@ -46,9 +46,7 @@ function getCss(fontSize: string) {
         height: 90vh;
         display: flex;
         color:black;
-        align-items: center;
         justify-content: center;
-        width:100%
     }
     .img{
         font-family: 'Noto Sans JP', 'Inter', sans-serif;
@@ -57,7 +55,6 @@ function getCss(fontSize: string) {
         font-size:40px;
         font-weight: 600;
         font-family: 'Noto Sans JP', 'Inter', sans-serif;
-        margin-right:auto
     }
     .flex{
         margin-top:10px;
