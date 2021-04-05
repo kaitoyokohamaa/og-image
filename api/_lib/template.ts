@@ -53,7 +53,8 @@ function getCss(fontSize: string) {
     .img{
         font-family: 'Noto Sans JP', 'Inter', sans-serif;
     }
-    .id{
+    .name{
+        font-size:24px;
         font-family: 'Noto Sans JP', 'Inter', sans-serif;
     }
     .flex{
@@ -61,6 +62,8 @@ function getCss(fontSize: string) {
         display:flex
     }
     .logo{
+        font-size:24px;
+        color:orange;
         font-family: 'Noto Sans JP', 'Inter', sans-serif;
     }
     code {
@@ -111,8 +114,8 @@ export function getHtml(parsedReq: ParsedRequest) {
             )}
                 </div>
             <div class="flex">
-            <div>Cloud Circle</div>
-            <div>海斗</div>
+            <div class="logo">Cloud Circle</div>
+            <div class="name">海斗</div>
             </div>
         </div>
     </body>
