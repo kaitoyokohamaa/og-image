@@ -46,14 +46,13 @@ function getCss(fontSize: string) {
         height: 90vh;
         display: flex;
         color:black;
-        justify-content: center;
     }
     .img{
         font-family: 'Noto Sans JP', 'Inter', sans-serif;
     }
     .name{
-        font-size:40px;
-        font-weight: 600;
+        font-size:60px;
+        font-weight: bold;
         font-family: 'Noto Sans JP', 'Inter', sans-serif;
     }
     .flex{
@@ -62,7 +61,7 @@ function getCss(fontSize: string) {
     }
     .logo{
         font-size:60px;
-        font-weight: 600;
+        font-weight: bold;
         color:orange;
         font-family: 'Noto Sans JP', 'Inter', sans-serif;
     }
