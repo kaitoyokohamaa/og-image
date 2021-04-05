@@ -55,13 +55,13 @@ function getCss(fontSize: string) {
     }
     .name{
         font-size:40px;
+        font-weight: 600;
         font-family: 'Noto Sans JP', 'Inter', sans-serif;
     }
     .flex{
         margin-top:10px;
         display:flex
         justify-content:flex-end;
-
     }
     .logo{
         font-size:60px;
@@ -96,6 +96,7 @@ function getCss(fontSize: string) {
         font-style: normal;
         font-weight: 400;
         color: black;
+        margin-top:-10px;
     }`;
 }
 
