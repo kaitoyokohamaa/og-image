@@ -50,6 +50,19 @@ function getCss(fontSize: string) {
         align-items: center;
         justify-content: center;
     }
+    .img{
+        font-family: 'Noto Sans JP', 'Inter', sans-serif;
+    }
+    .id{
+        font-family: 'Noto Sans JP', 'Inter', sans-serif;
+    }
+    .flex{
+        margin-top:10px;
+        display:flex
+    }
+    .logo{
+        font-family: 'Noto Sans JP', 'Inter', sans-serif;
+    }
     code {
         color: #D400FF;
         font-family: 'Vera', 'M PLUS 1p';
@@ -93,13 +106,14 @@ export function getHtml(parsedReq: ParsedRequest) {
     <body>
         <div>
             <div class="spacer">
-            <div>Cloud Circle</div>
-            <div>Reactを使って開発したいやつ募集</div>
             <div class="heading">${emojify(
               md ? marked(text) : sanitizeHtml(text)
             )}
+                </div>
+            <div class="flex">
+            <div>Cloud Circle</div>
+            <div>海斗</div>
             </div>
-            <div>@2330frrfr</div>
         </div>
     </body>
 </html>`;
