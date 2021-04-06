@@ -45,7 +45,7 @@ function getCss() {
         border-image-repeat: stretch;
         height: 90vh;
         color:black;
-        margin:10px
+        margin:20px
     }
     .img{
         font-family: 'Noto Sans JP', 'Inter', sans-serif;
@@ -54,13 +54,13 @@ function getCss() {
         font-size:60px;
         font-weight: bold;
         font-family: 'Noto Sans JP', 'Inter', sans-serif;
-        margin-right:10px
+        margin-right:20px
         padding:20px
     }
     .flex{
         margin-top:350px;
         display:flex;
-        padding:10px
+        padding:20px
     }
     .logo{
         font-size:60px;
@@ -68,7 +68,7 @@ function getCss() {
         color:orange;
         font-family: 'Noto Sans JP', 'Inter', sans-serif;
         margin-right: auto;
-        margin-left:10px
+        margin-left:20px
     }
     code {
         color: #D400FF;
@@ -94,8 +94,8 @@ function getCss() {
         font-style: normal;
         font-weight: bold;
         color: black;
-        padding:10px;
-        margin-left:10px
+        padding:20px;
+        margin-left:20px
     }`;
 }
 
