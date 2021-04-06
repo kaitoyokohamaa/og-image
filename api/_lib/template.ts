@@ -59,7 +59,7 @@ function getCss() {
       font-size:60px;
       font-weight: bold;
       font-family: 'Noto Sans JP', 'Inter', sans-serif;
-      margin-right:50px
+      padding-top:10px
   }
   .flex{
 display: flex;
