@@ -55,7 +55,6 @@ function getCss() {
         font-weight: bold;
         font-family: 'Noto Sans JP', 'Inter', sans-serif;
         margin-right:50px
-        padding:50px
     }
     .flex{
         margin-top:350px;
@@ -117,7 +116,7 @@ export function getHtml(parsedReq: ParsedRequest) {
             </div>
             <div class="flex">
                 <div class="logo">Cloud Circle</div>
-                <div class="name">海斗</div>
+                <div class="name">ropital</div>
             </div>
         </div>
     </body>
