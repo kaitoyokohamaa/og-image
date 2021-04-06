@@ -51,20 +51,25 @@ function getCss() {
    display: flex;
   align-items: center;
   flex-direction: column;
+min-height: 100vh;
 }
   .img{
       font-family: 'Noto Sans JP', 'Inter', sans-serif;
   }
   .name{
+      align-items: center;
       font-size:60px;
       font-weight: bold;
       font-family: 'Noto Sans JP', 'Inter', sans-serif;
-      padding-top:10px
+justify-content: center;
+      vertical-align: middle;
+    padding-top:10px
   }
   .flex{
 display: flex;
   justify-content: space-around;
-  width: 70%;
+  width: 100%;
+     height: 40px;
       
   }
   .logo{
@@ -108,7 +113,7 @@ export function getHtml(parsedReq: ParsedRequest) {
             </div>
             <div class="flex">
                 <div class="logo">Cloud Circle</div>
-                <div class="name">ropital</div>
+                <div class="name">@ropital</div>
             </div>
         </div>
     </body>
