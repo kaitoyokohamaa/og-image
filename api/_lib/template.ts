@@ -57,17 +57,18 @@ min-height: 90vh;
       font-family: 'Noto Sans JP', 'Inter', sans-serif;
   }
   .name{
-      align-items: center;
-      font-size:60px;
-      font-weight: bold;
-      font-family: 'Noto Sans JP', 'Inter', sans-serif;
-      justify-content: center;
+    align-items: center;
+    font-size:60px;
+    font-weight: bold;
+    font-family: 'Noto Sans JP', 'Inter', sans-serif;
+justify-content: center;
     vertical-align: middle;
-    padding-top:10px;
-    margin-right:auto;
-  }
+  padding-top:15px;
+         padding-right:40px;
+}
   .flex{
-display: flex;
+   display: flex;
+   justify-content:space-between;
   width: 100%;
   }
   .logo{
@@ -75,8 +76,10 @@ display: flex;
       font-weight: bold;
       color:orange;
       font-family: 'Noto Sans JP', 'Inter', sans-serif;
+
       font-family: Times New Roman, Verdana;
       font-size: 100px;
+      padding-left:40px;
   }
 
   
@@ -89,7 +92,7 @@ display: flex;
       flex-grow: 1;
       padding-top:150px;
       padding-left:40px;
-      padding-right:40px;
+      padding-right:40px
   }`;
 }
 
