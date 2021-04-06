@@ -43,7 +43,7 @@ function getCss() {
       border-image: url("https://www.infocrest.co.jp/ykxbdgs5qgq3/uploads/2019/10/blog_m02_2.jpg");
       border-image-slice: 1;
       border-image-repeat: stretch;
-      height: 90vh;
+      height: 95vh;
       color:black;
       margin:0px
   }
@@ -69,8 +69,6 @@ justify-content: center;
 display: flex;
   justify-content: space-around;
   width: 100%;
-     height: 40px;
-      
   }
   .logo{
      
@@ -90,7 +88,6 @@ display: flex;
       font-weight: bold;
       color: black;
       padding:50px;
-      margin-left:20px
       flex-grow: 1;
   }`;
 }
