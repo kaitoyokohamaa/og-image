@@ -55,6 +55,7 @@ function getCss() {
         font-weight: bold;
         font-family: 'Noto Sans JP', 'Inter', sans-serif;
         margin-right:10px
+        padding:20px
     }
     .flex{
         margin-top:450px;
