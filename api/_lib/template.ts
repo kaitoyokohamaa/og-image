@@ -63,11 +63,11 @@ min-height: 90vh;
       font-family: 'Noto Sans JP', 'Inter', sans-serif;
       justify-content: center;
     vertical-align: middle;
-    padding-top:10px
+    padding-top:10px;
+    margin-right:auto;
   }
   .flex{
 display: flex;
-  justify-content: space-around;
   width: 100%;
   }
   .logo{
@@ -75,7 +75,6 @@ display: flex;
       font-weight: bold;
       color:orange;
       font-family: 'Noto Sans JP', 'Inter', sans-serif;
-
       font-family: Times New Roman, Verdana;
       font-size: 100px;
   }
@@ -88,7 +87,9 @@ display: flex;
       font-weight: bold;
       color: black;
       flex-grow: 1;
-      padding-top:50px;
+      padding-top:150px;
+      padding-left:40px;
+      padding-right:40px;
   }`;
 }
 
