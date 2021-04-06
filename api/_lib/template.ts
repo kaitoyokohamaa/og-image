@@ -45,6 +45,7 @@ function getCss() {
         border-image-repeat: stretch;
         height: 90vh;
         color:black;
+        margin:10px
     }
     .img{
         font-family: 'Noto Sans JP', 'Inter', sans-serif;
