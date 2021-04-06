@@ -58,8 +58,9 @@ function getCss() {
         padding:20px
     }
     .flex{
-        margin-top:450px;
-        display:flex
+        margin-top:350px;
+        display:flex;
+        padding:10px
     }
     .logo{
         font-size:60px;
