@@ -9,7 +9,6 @@ export function parseRequest(req: IncomingMessage) {
 
   const arr = (pathname || "/").slice(1).split(".");
 
-  let extension = "";
   let text = "";
   let id = "";
   if (arr.length === 0) {
@@ -18,12 +17,11 @@ export function parseRequest(req: IncomingMessage) {
     text = arr[0];
     id = arr[1];
   } else {
-    extension = arr.pop() as string;
     text = arr.join(".");
   }
 
   const parsedRequest: ParsedRequest = {
-    fileType: extension === "jpeg" ? extension : "png",
+    fileType: "jpeg",
     text: decodeURIComponent(text),
     md: md === "1" || md === "true",
     id,

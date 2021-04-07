@@ -43,7 +43,7 @@ function getCss() {
       border-image: url("https://www.infocrest.co.jp/ykxbdgs5qgq3/uploads/2019/10/blog_m02_2.jpg");
       border-image-slice: 1;
       border-image-repeat: stretch;
-      height: 90vh;
+      height: 100vh;
       color:black;
       margin:0px
   }
@@ -51,7 +51,7 @@ function getCss() {
    display: flex;
   align-items: center;
   flex-direction: column;
-min-height: 90vh;
+min-height: 100vh;
 }
   .img{
       font-family: 'Noto Sans JP', 'Inter', sans-serif;
@@ -98,6 +98,7 @@ justify-content: center;
 
 export function getHtml(parsedReq: ParsedRequest) {
   const { text, md, id } = parsedReq;
+
   return `<!DOCTYPE html>
 <html>
     <meta charset="utf-8">
@@ -113,8 +114,10 @@ export function getHtml(parsedReq: ParsedRequest) {
             )}
             </div>
             <div class="flex">
-                <div class="logo">Cloud Circle</div>
-                <div class="name">@${id}</div>
+                <div class="logo">
+                  ${id && "Cloud Circle"} 
+                </div>
+                <div class="name">${`@` + id}</div>
             </div>
         </div>
     </body>
