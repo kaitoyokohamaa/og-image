@@ -117,7 +117,7 @@ export function getHtml(parsedReq: ParsedRequest) {
                 <div class="logo">
                   ${id && "Cloud Circle"} 
                 </div>
-                <div class="name">${`@` + id}</div>
+                <div class="name">${id && `@` + id}</div>
             </div>
         </div>
     </body>
