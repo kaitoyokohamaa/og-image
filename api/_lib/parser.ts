@@ -16,6 +16,7 @@ export function parseRequest(req: IncomingMessage) {
     text = "";
   } else if (arr.length === 1) {
     text = arr[0];
+  } else if (arr.length === 2) {
     id = arr[1];
   } else {
     extension = arr.pop() as string;
