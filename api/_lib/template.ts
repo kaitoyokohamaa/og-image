@@ -97,7 +97,7 @@ justify-content: center;
 }
 
 export function getHtml(parsedReq: ParsedRequest) {
-  const { text, md } = parsedReq;
+  const { text, md, id } = parsedReq;
   return `<!DOCTYPE html>
 <html>
     <meta charset="utf-8">
@@ -114,7 +114,7 @@ export function getHtml(parsedReq: ParsedRequest) {
             </div>
             <div class="flex">
                 <div class="logo">Cloud Circle</div>
-                <div class="name">@ropital</div>
+                <div class="name">@${id}</div>
             </div>
         </div>
     </body>
