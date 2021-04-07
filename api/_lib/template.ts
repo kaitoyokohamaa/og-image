@@ -80,6 +80,7 @@ justify-content: center;
       font-family: Times New Roman, Verdana;
       font-size: 100px;
       padding-left:40px;
+      padding-bottom:10px
   }
 
   
