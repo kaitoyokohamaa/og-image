@@ -8,12 +8,15 @@ export function parseRequest(req: IncomingMessage) {
   const { md } = query || {};
 
   const arr = (pathname || "/").slice(1).split(".");
+
   let extension = "";
   let text = "";
+  let id = "";
   if (arr.length === 0) {
     text = "";
   } else if (arr.length === 1) {
     text = arr[0];
+    id = arr[1];
   } else {
     extension = arr.pop() as string;
     text = arr.join(".");
@@ -23,7 +26,7 @@ export function parseRequest(req: IncomingMessage) {
     fileType: extension === "jpeg" ? extension : "png",
     text: decodeURIComponent(text),
     md: md === "1" || md === "true",
-    id: "ropital",
+    id,
   };
 
   return parsedRequest;
