@@ -5,7 +5,7 @@ import { ParsedRequest } from "./types";
 export function parseRequest(req: IncomingMessage) {
   console.log("HTTP " + req.url);
   const { pathname, query } = parse(req.url || "/", true);
-  const { id, md } = query || {};
+  const { md } = query || {};
 
   const arr = (pathname || "/").slice(1).split(".");
   let extension = "";
@@ -23,6 +23,7 @@ export function parseRequest(req: IncomingMessage) {
     fileType: extension === "jpeg" ? extension : "png",
     text: decodeURIComponent(text),
     md: md === "1" || md === "true",
+    id: "ropital",
   };
 
   return parsedRequest;
